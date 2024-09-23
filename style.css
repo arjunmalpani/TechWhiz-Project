@@ -362,6 +362,7 @@ body {
   padding: 1.5rem;
   font-size: 1rem;
   font-weight: 400;
+  width: 100%;
   border: 0.5px solid var(--clr-border);
   p {
     color: var(--clr-accent-300);
@@ -385,7 +386,7 @@ body {
 .services-left {
   /* flex: 1; */
   width: 50%;
-  display: flex;
+  display: fl ex;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: flex-end; */
@@ -396,11 +397,12 @@ body {
 }
 
 .services-grid {
-  width: 100%;
+  max-width: 100%;
   margin-top: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* align-content: center; */
+  /* overflow: hidden; */
   gap: 1rem;
 }
 .services-grid .service-card {
@@ -564,7 +566,7 @@ body {
     width: 100%;
   }
   .services-grid {
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
   .services-right {
     display: none;
@@ -617,6 +619,9 @@ body {
 @media screen and (max-width: 600px) {
   .header .btnToHide {
     display: none;
+  }
+  .hero-section{
+    margin: 10px;
   }
   .hero-section .content {
     padding-inline: 1rem;
